@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Prova da alura">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prova da alura</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header" id="home">
+    <!-- inicio do menu -->
+    <nav class="menu">
+      <ul class="menu__list">
+        <!-- primeiro item do menu -->
+        <li class="menu__item">
+          <a href="#home" class="menu__link">Home</a>
+        </li>
+        <!-- segudo item do menu -->
+        <li class="menu__item">
+          <a href="#about" class="menu__link">Sobre</a>
+        </li>
+        <!-- terceiro item do menu -->
+        <li class="menu__item">
+          <a href="#speakers" class="menu__link">Palestrantes</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- fim do menu -->
+
+    <!-- banner inicio -->
+    <section class="banner">
+      <!-- imagem no css -->
+      <div class="banner__image" alt="foto de uma cidade desfocada"></div>
+      <h1 class="banner__title">Aluraconf</h1>
+      <p class="banner__title--color">30 de Maio | Rio</p>
+      <a href="#subscribe-section"><button type="button" name="subscribe" class="banner__btn">Inscreva-se</button></a>
+    </section>
+    <!-- fim do menu -->
+  </header>
+  <!-- começo do conteudo -->
+  <main class="content" id="about">
+    <!-- inicio da seçao de informações e conteudos -->
+    <section class="info">
+      <div class="wrap">
+        <h2 class="info__title">Muito conteúdo: do Front-end ao Back-end</h2>
+        <h3 class="info__subtitle">30 de Maio de 2017 — Na cidade Maravilhosa</h3>
+        <p class="info__text">Com a AluraConf abordaremos o que há de novidade e conhecimento essenciais a um desenvolvedor mobile.</p>
+        <p class="info__text">É uma grande chance de ficar por dentro dos assuntos de Android, iOS, Web mobile, desenvolvimento híbrido, UX, além da parte back-end com Rest, Microservices, BigData. O desenvolvedor atualizado vai estar aqui.</p>
+      </div>
+    </section>
+    <!-- inicio da seçao dos palestrantes -->
+    <section class="speaker" id="speakers">
+      <div class="wrap">
+        <!-- titulo e subtitulo dos palestrantes -->
+        <h2 class="speaker__title">Palestrantes</h2>
+        <p class="speaker__subtitle">Aprenda com palestrantes que são referência no mercado.</p>
+        <!-- inicio dos cards de palestrantes -->
+        <div class="speaker__cards">
+          <!-- card Palestrante numero 1 -->
+          <div class="card">
+            <div class="card__image" alt="Palestrante Flavio Almeida"></div>
+            <h3 class="card__name">Flavio Almeida</h3>
+            <h4 class="card__profession">Desenvolvedor e instrutor da Caelum</h4>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <!-- fim do card  -->
+          <!-- card Palestrante numero 1 -->
+          <div class="card">
+            <div class="card__image" alt="Palestrante Flavio Almeida"></div>
+            <h3 class="card__name">Flavio Almeida</h3>
+            <h4 class="card__profession">Desenvolvedor e instrutor da Caelum</h4>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <!-- fim do card  -->
+          <!-- card Palestrante numero 1 -->
+          <div class="card">
+            <div class="card__image" alt="Palestrante Flavio Almeida"></div>
+            <h3 class="card__name">Flavio Almeida</h3>
+            <h4 class="card__profession">Desenvolvedor e instrutor da Caelum</h4>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <!-- fim do card  -->
+          <!-- card Palestrante numero 1 -->
+          <div class="card">
+            <div class="card__image" alt="Palestrante Flavio Almeida"></div>
+            <h3 class="card__name">Flavio Almeida</h3>
+            <h4 class="card__profession">Desenvolvedor e instrutor da Caelum</h4>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+          <!-- fim do card  -->
+        </div>
+        <!-- fim dos cards dos palestrantes -->
+      </div>
+    </section>
+    <!-- inicio da seção de inscrição -->
+    <section class="subscribe" id="subscribe-section">
+      <div class="wrap">
+        <h2 class="subscribe__title">Inscreva-se</h2>
+        <!-- inicio formulario -->
+        <form class="subscribe__form" action="index.html" method="post">
+          <!-- input de nome -->
+          <label class="subscribe__label" for="suscribeName">Nome e sobrenome</label>
+          <input class="subscribe__input" type="name" name="Nome" id="subscribeNome" placeholder="Fulano da Pereira">
+          <!-- input de email -->
+          <label class="subscribe__label" for="suscribeEmail">Email</label>
+          <input class="subscribe__input" type="email" name="E-mail" id="subscribeEmail" placeholder="email@exemplo.com">
+          <!-- botao -->
+          <button type="submit" class="subscribe__btn">Realizar inscrição</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

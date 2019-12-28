@@ -1,0 +1,307 @@
+$maincolor: #6b5be2;
+$firstcolor: #2a7ae4;
+$secondcolor: #fff;
+$thirdcolor: #16d377;
+$subtitle: #4a4949;
+$title: #090925;
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrap{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0));
+
+  &__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    // flex-flow: column;
+  }
+
+  &__item{
+    margin-left: 20px;
+  }
+
+  &__item:first-child{
+    margin-left: 0;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $secondcolor;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  &__link:hover{
+    color: $firstcolor;
+    transition: .2s;
+  }
+}
+
+.banner{
+  height: 80vh;
+
+  &__image{
+    position: absolute;
+    background-image: url(../images/destaque.jpeg);
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+  }
+
+  &__title{
+    position: relative;
+    top: 29vh;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $secondcolor;
+
+    &--color{
+      position: relative;
+      top: 31vh;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $firstcolor;
+    }
+  }
+
+  &__btn{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 43vh;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: $firstcolor;
+    color: $secondcolor;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 3px;
+    font-weight: 300;
+
+    &:hover{
+      background-color: #5293e8;
+      transform: scale3d(1.05, 1.05, 1.05);
+      transition: .3s;
+    }
+  }
+}
+
+.info{
+  padding-top: 40px;
+  text-align: center;
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $title;
+  }
+
+  &__subtitle{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: $subtitle;
+    font-weight: lighter;
+  }
+
+  &__text{
+    line-height: 1.3rem;
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  &__text:last-child{
+    padding-bottom: 0px;
+  }
+}
+
+.speaker{
+  background-color: $firstcolor;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__title{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: $secondcolor;
+    padding-bottom: 5px;
+  }
+
+  &__subtitle{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d6e6fd;
+    font-weight: lighter;
+  }
+
+  &__cards{
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+.card{
+  background-color: $secondcolor;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+
+
+  &__image{
+    border-radius: 100%;
+    background-image: url(../images/palestrantes/placeholder.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__name{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: $title;
+    padding-bottom: 5px;
+  }
+
+  &__profession{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    color: $subtitle;
+    font-weight: lighter;
+  }
+
+  &__text{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    color: $title;
+    font-weight: lighter;
+  }
+}
+
+.subscribe{
+  margin-top: 20px;
+
+  &__title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $title;
+    padding-bottom: 20px;
+  }
+
+  &__form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+  }
+
+  &__label{
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    color: $subtitle;
+  }
+
+  &__input{
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 0.8rem;
+
+    &:active, &:focus{
+      border: 1px solid $firstcolor;
+    }
+  }
+
+  &__btn{
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: $firstcolor;
+    color: $secondcolor;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 3px;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    &:hover{
+      background-color: #5293e8;
+      transform: scale3d(1.05, 1.05, 1.05);
+      transition: .3s;
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .banner{
+    &__title, &__title--color{
+      top: 20vh;
+      font-size: 5rem;
+    }
+
+    &__btn{
+      top: 30vh;
+    }
+  }
+
+  .speaker{
+    &__cards{
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    }
+  }
+  .card{
+    margin: 1%;
+    width: 28%;
+
+    &:nth-child(3n){
+      margin-right: 0%;
+    }
+    &:nth-child(3n+1){
+      margin-left: 0%;
+    }
+  }
+}
